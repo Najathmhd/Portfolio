@@ -11,11 +11,11 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-white font-semibold mb-3">Contact</h3>
             <div className="space-y-2">
-              <div className="flex items-center justify-center md:justify-start gap-2 text-gray-400 text-sm">
+              <div className="flex items-center gap-2 text-gray-400 text-sm">
                 <Mail size={16} />
                 <span>najamhd037@gmail.com</span>
               </div>
-              <div className="flex items-center justify-center md:justify-start gap-2 text-gray-400 text-sm">
+              <div className="flex items-center gap-2 text-gray-400 text-sm">
                 <MapPin size={16} />
                 <span>Warakapola, Sabaragamuwa Province, Sri Lanka</span>
               </div>
@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="text-center md:text-left">
             <h3 className="text-white font-semibold mb-3">Connect</h3>
-            <div className="flex justify-center md:justify-start space-x-4">
+            <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
                 <Github size={20} />
               </a>

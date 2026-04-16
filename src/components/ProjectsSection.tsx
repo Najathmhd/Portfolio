@@ -152,7 +152,7 @@ const ProjectsSection = () => {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={tech}
@@ -164,7 +164,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 
-                <div className="flex space-x-4 justify-center lg:justify-start">
+                <div className="flex space-x-4">
                   <a
                     href={project.github}
                     className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110"

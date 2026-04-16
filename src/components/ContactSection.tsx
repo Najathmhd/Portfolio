@@ -87,21 +87,21 @@ const ContactSection = () => {
             <h3 className="text-2xl font-semibold text-white mb-8">Let's Start a Conversation</h3>
             
             <div className="space-y-6 mb-8">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 group transform transition-all duration-300 hover:scale-105">
+              <div className="flex items-center gap-4 group transform transition-all duration-300 hover:scale-105">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:bg-blue-500/30 transition-all duration-300">
                   <Mail className="text-blue-400 group-hover:animate-pulse" size={24} />
                 </div>
-                <div className="text-center sm:text-left">
+                <div>
                   <h4 className="text-white font-medium group-hover:text-blue-400 transition-colors duration-300">Email</h4>
                   <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">najamhd037@gmail.com</p>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 group transform transition-all duration-300 hover:scale-105">
+              <div className="flex items-center gap-4 group transform transition-all duration-300 hover:scale-105">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 transition-all duration-300">
                   <MapPin className="text-purple-400 group-hover:animate-pulse" size={24} />
                 </div>
-                <div className="text-center sm:text-left">
+                <div>
                   <h4 className="text-white font-medium group-hover:text-purple-400 transition-colors duration-300">Location</h4>
                   <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Warakapola, Sabaragamuwa Province, Sri Lanka</p>
                 </div>
@@ -110,7 +110,7 @@ const ContactSection = () => {
 
             <div className="animate-fade-in text-center lg:text-left" style={{ animationDelay: '0.6s' }}>
               <h4 className="text-white font-semibold mb-4">Connect with me</h4>
-              <div className="flex justify-center lg:justify-start space-x-4">
+              <div className="flex space-x-4">
                 <a
                   href="https://www.linkedin.com/in/najath-m-7321812a3/"
                   target="_blank"

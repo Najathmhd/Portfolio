@@ -63,9 +63,9 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="bg-slate-800/30 p-6 rounded-lg border border-slate-700/30 transform transition-all duration-300 hover:scale-105 hover:border-blue-500/30 hover:shadow-lg text-center lg:text-left">
+            <div className="bg-slate-800/30 p-6 rounded-lg border border-slate-700/30 transform transition-all duration-300 hover:scale-105 hover:border-blue-500/30 hover:shadow-lg">
               <h4 className="text-white font-semibold mb-4">Tools & Technologies</h4>
-              <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+              <div className="flex flex-wrap gap-2">
                 {tools.map((tool, index) => (
                   <span
                     key={tool}

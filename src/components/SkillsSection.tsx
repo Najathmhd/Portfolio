@@ -78,9 +78,9 @@ const SkillsSection = () => {
               ))}
             </div>
 
-            <div className="mt-8 bg-gradient-to-r from-blue-500/10 to-purple-600/10 p-6 rounded-lg border border-blue-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 animate-fade-in text-center lg:text-left" style={{ animationDelay: '0.8s' }}>
+            <div className="mt-8 bg-gradient-to-r from-blue-500/10 to-purple-600/10 p-6 rounded-lg border border-blue-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 animate-fade-in" style={{ animationDelay: '0.8s' }}>
               <h4 className="text-white font-semibold mb-4">Currently Learning</h4>
-              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+              <div className="flex flex-wrap gap-3">
                 <span className="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg text-sm border border-blue-500/30 transform transition-all duration-300 hover:scale-110 hover:bg-blue-500/30 animate-pulse">
                   Deep Learning
                 </span>
