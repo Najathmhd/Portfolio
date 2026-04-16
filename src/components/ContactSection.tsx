@@ -51,7 +51,7 @@ const ContactSection = () => {
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
-      toast.success('Message sent professionally! Thank you.');
+      toast.success('Your message has been sent successfully! I will get back to you soon.');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error: any) {
       console.error('Detailed EmailJS Error:', {
