@@ -70,21 +70,23 @@ const HeroSection = () => {
 
             {/* Education Section */}
             <div className="bg-slate-800/30 backdrop-blur-sm rounded-lg p-4 mb-6 animate-fade-in" style={{ animationDelay: '0.35s' }}>
-              <div className="space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left">
-                <div className="flex items-start gap-3 w-fit mx-auto lg:mx-0">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="text-left">
-                    <span className="text-white font-semibold block">BSc (Hons) in Data Science</span>
-                    <p className="text-blue-300 text-sm">London Met University (UK)</p>
-                    <p className="text-gray-400 text-xs">(Present)</p>
+              <div className="flex flex-col items-center lg:items-start">
+                <div className="space-y-4 w-fit text-left">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="text-white font-semibold block leading-tight">BSc (Hons) in Data Science</span>
+                      <p className="text-blue-300 text-sm mt-1">London Met University (UK)</p>
+                      <p className="text-gray-400 text-xs mt-1">(Present)</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-start gap-3 w-fit mx-auto lg:mx-0">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="text-left">
-                    <span className="text-white font-semibold block">Advanced Level - Engineering Technology</span>
-                    <p className="text-purple-300 text-sm">Kekunagolla National School</p>
-                    <p className="text-gray-400 text-xs">(2021)</p>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="text-white font-semibold block leading-tight">Advanced Level - Engineering Technology</span>
+                      <p className="text-purple-300 text-sm mt-1">Kekunagolla National School</p>
+                      <p className="text-gray-400 text-xs mt-1">(2021)</p>
+                    </div>
                   </div>
                 </div>
               </div>
