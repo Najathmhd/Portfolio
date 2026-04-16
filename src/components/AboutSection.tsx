@@ -19,20 +19,20 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="animate-fade-in text-center lg:text-left" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-semibold text-white mb-6">My Journey</h3>
             <div className="space-y-6">
-              <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30">
+              <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30 w-full max-w-2xl mx-auto lg:mx-0">
                 I'm currently pursuing my undergraduate degree in Data Science, where I've discovered my passion for 
                 uncovering patterns and insights hidden within data. My academic journey has been complemented by 
                 hands-on projects that have taught me the real-world applications of statistical analysis and machine learning.
               </p>
-              <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30">
+              <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30 w-full max-w-2xl mx-auto lg:mx-0">
                 From predicting customer behavior to analyzing social media trends, I love taking complex datasets 
                 and transforming them into clear, actionable insights that drive decision-making. My approach combines 
                 technical expertise with strong communication skills to bridge the gap between data and business value.
               </p>
-              <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30">
+              <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30 w-full max-w-2xl mx-auto lg:mx-0">
                 When I'm not coding or analyzing data, you can find me exploring new visualization techniques, 
                 contributing to open-source projects, or learning about the latest developments in AI and machine learning.
               </p>
@@ -63,9 +63,9 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="bg-slate-800/30 p-6 rounded-lg border border-slate-700/30 transform transition-all duration-300 hover:scale-105 hover:border-blue-500/30 hover:shadow-lg">
+            <div className="bg-slate-800/30 p-6 rounded-lg border border-slate-700/30 transform transition-all duration-300 hover:scale-105 hover:border-blue-500/30 hover:shadow-lg text-center lg:text-left">
               <h4 className="text-white font-semibold mb-4">Tools & Technologies</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                 {tools.map((tool, index) => (
                   <span
                     key={tool}

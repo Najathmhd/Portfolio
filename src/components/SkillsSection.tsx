@@ -36,12 +36,12 @@ const SkillsSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="animate-fade-in text-center lg:text-left" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-semibold text-white mb-8">Technical Skills</h3>
             <div className="space-y-6">
               {technicalSkills.map((skill, index) => (
                 <div key={skill.name} className="group animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="flex justify-between mb-2">
+                  <div className="flex justify-between mb-2 px-1">
                     <div className="flex items-center gap-2">
                       <span className="text-blue-400">{skill.icon}</span>
                       <span className="text-gray-300 font-medium group-hover:text-white transition-colors duration-300">{skill.name}</span>
@@ -62,7 +62,7 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="animate-fade-in text-center lg:text-left" style={{ animationDelay: '0.4s' }}>
             <h3 className="text-2xl font-semibold text-white mb-8">Soft Skills</h3>
             <div className="grid grid-cols-2 gap-4">
               {softSkills.map((skill, index) => (
@@ -78,9 +78,9 @@ const SkillsSection = () => {
               ))}
             </div>
 
-            <div className="mt-8 bg-gradient-to-r from-blue-500/10 to-purple-600/10 p-6 rounded-lg border border-blue-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            <div className="mt-8 bg-gradient-to-r from-blue-500/10 to-purple-600/10 p-6 rounded-lg border border-blue-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 animate-fade-in text-center lg:text-left" style={{ animationDelay: '0.8s' }}>
               <h4 className="text-white font-semibold mb-4">Currently Learning</h4>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <span className="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg text-sm border border-blue-500/30 transform transition-all duration-300 hover:scale-110 hover:bg-blue-500/30 animate-pulse">
                   Deep Learning
                 </span>

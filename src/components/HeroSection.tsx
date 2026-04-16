@@ -92,7 +92,7 @@ const HeroSection = () => {
               </div>
             </div>
             
-            <p className="text-lg text-gray-400 mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <p className="text-lg text-gray-400 mb-8 max-w-2xl animate-fade-in mx-auto lg:mx-0" style={{ animationDelay: '0.4s' }}>
               Passionate about transforming raw data into actionable insights. Currently pursuing my degree in Data Science 
               while building projects that solve real-world problems using machine learning, statistical analysis, and data visualization.
             </p>

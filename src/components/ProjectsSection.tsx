@@ -139,7 +139,7 @@ const ProjectsSection = () => {
               className="bg-slate-800/50 rounded-lg border border-slate-700/50 overflow-hidden hover:border-blue-500/50 transition-all duration-500 group transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="p-6">
+              <div className="p-6 text-center lg:text-left">
                 <div className="mb-4 transform transition-all duration-300 group-hover:scale-105">
                   {project.chart}
                 </div>
@@ -152,7 +152,7 @@ const ProjectsSection = () => {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={tech}
@@ -164,7 +164,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 justify-center lg:justify-start">
                   <a
                     href={project.github}
                     className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110"
