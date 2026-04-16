@@ -86,8 +86,8 @@ const ContactSection = () => {
           <div className="animate-fade-in text-center lg:text-left" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-semibold text-white mb-8">Let's Start a Conversation</h3>
             
-            <div className="space-y-6 mb-8">
-              <div className="flex items-center justify-center lg:justify-start gap-4 group transform transition-all duration-300 hover:scale-105">
+            <div className="space-y-6 mb-8 flex flex-col items-center lg:items-start">
+              <div className="flex items-center gap-4 group transform transition-all duration-300 hover:scale-105">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:bg-blue-500/30 transition-all duration-300">
                   <Mail className="text-blue-400 group-hover:animate-pulse" size={24} />
                 </div>
@@ -97,7 +97,7 @@ const ContactSection = () => {
                 </div>
               </div>
               
-              <div className="flex items-center justify-center lg:justify-start gap-4 group transform transition-all duration-300 hover:scale-105">
+              <div className="flex items-center gap-4 group transform transition-all duration-300 hover:scale-105">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 transition-all duration-300">
                   <MapPin className="text-purple-400 group-hover:animate-pulse" size={24} />
                 </div>

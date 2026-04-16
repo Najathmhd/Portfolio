@@ -59,11 +59,11 @@ const ResumeSection = () => {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
+              <h3 className="text-2xl font-semibold text-white mb-6 flex items-center justify-center lg:justify-start gap-3">
                 <Award className="text-yellow-400" size={28} />
                 Key Qualifications & Skills
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-4 flex flex-col items-center lg:items-start">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -74,7 +74,7 @@ const ResumeSection = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
+              <h3 className="text-2xl font-semibold text-white mb-6 flex items-center justify-center lg:justify-start gap-3">
                 <Calendar className="text-green-400" size={28} />
                 Educational Journey
               </h3>
