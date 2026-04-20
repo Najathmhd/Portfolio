@@ -38,7 +38,7 @@ const ProjectsSection = () => {
             <CartesianGrid strokeDasharray="3 3" stroke="#374151" horizontal={false} />
             <XAxis type="number" domain={[0, 100]} stroke="#9CA3AF" hide />
             <YAxis dataKey="model" type="category" stroke="#9CA3AF" width={100} axisLine={false} tickLine={false} />
-            <Tooltip 
+            <Tooltip
               contentStyle={{ backgroundColor: '#1F2937', border: '1px solid #374151', borderRadius: '8px' }}
               labelStyle={{ color: '#F9FAFB' }}
               formatter={(value) => [`${value}%`, 'Accuracy']}
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
             <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
             <XAxis dataKey="month" stroke="#9CA3AF" />
             <YAxis stroke="#9CA3AF" />
-            <Tooltip 
+            <Tooltip
               contentStyle={{ backgroundColor: '#1F2937', border: '1px solid #374151', borderRadius: '8px' }}
               labelStyle={{ color: '#F9FAFB' }}
             />
@@ -91,7 +91,7 @@ const ProjectsSection = () => {
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>
-            <Tooltip 
+            <Tooltip
               contentStyle={{ backgroundColor: '#1F2937', border: '1px solid #374151', borderRadius: '8px' }}
               labelStyle={{ color: '#F9FAFB' }}
             />
@@ -111,7 +111,7 @@ const ProjectsSection = () => {
             <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
             <XAxis dataKey="month" stroke="#9CA3AF" />
             <YAxis stroke="#9CA3AF" />
-            <Tooltip 
+            <Tooltip
               contentStyle={{ backgroundColor: '#1F2937', border: '1px solid #374151', borderRadius: '8px' }}
               labelStyle={{ color: '#F9FAFB' }}
             />
@@ -136,8 +136,8 @@ const ProjectsSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-slate-800/50 rounded-lg border border-slate-700/50 overflow-hidden hover:border-blue-500/50 transition-all duration-500 group transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
@@ -145,15 +145,15 @@ const ProjectsSection = () => {
                 <div className="mb-4 transform transition-all duration-300 group-hover:scale-105">
                   {project.chart}
                 </div>
-                
+
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-300 mb-4 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, techIndex) => (
                     <span
@@ -165,7 +165,7 @@ const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex space-x-4">
                   <a
                     href={project.github}

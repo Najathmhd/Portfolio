@@ -25,7 +25,7 @@ const HeroSection = () => {
             {/* Profile Image - Mobile/Tablet View */}
             <div className="lg:hidden mb-8 flex justify-center">
               <div className="relative">
-                <div 
+                <div
                   className="w-40 h-40 sm:w-48 sm:h-52 relative flip-card cursor-pointer"
                   onClick={toggleFlip}
                 >
@@ -58,11 +58,11 @@ const HeroSection = () => {
                 Najath Mohomed
               </span>
             </h1>
-            
+
             <h2 className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Data Science Student & Analytics Enthusiast
+              Data Analyst | Aspiring Machine Learning Engineer
             </h2>
-            
+
             <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-400 mb-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <MapPin size={18} className="text-purple-400" />
               <span className="text-sm sm:text-base">Warakapola, Sabaragamuwa Province, Sri Lanka</span>
@@ -91,12 +91,12 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            
+
             <p className="text-lg text-gray-400 mb-8 max-w-2xl animate-fade-in mx-auto lg:mx-0" style={{ animationDelay: '0.4s' }}>
-              Passionate about transforming raw data into actionable insights. Currently pursuing my degree in Data Science 
-              while building projects that solve real-world problems using machine learning, statistical analysis, and data visualization.
+              “I am a Data Analyst passionate about working with data, creating meaningful visualizations, and building predictive models.
+              I enjoy solving real-world problems using data-driven approaches and continuously improving my skills in machine learning.”
             </p>
-            
+
             <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <a href="/lovable-uploads/Najath - Resume.pdf" download="Najath_Mohomed_Resume.pdf" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 flex items-center justify-center gap-2">
@@ -104,14 +104,14 @@ const HeroSection = () => {
                   Download Resume
                 </button>
               </a>
-              <button 
+              <button
                 onClick={scrollToProjects}
                 className="w-full sm:w-auto border border-gray-500 text-gray-300 px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 hover:border-gray-400 transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer flex items-center justify-center"
               >
                 View Projects
               </button>
             </div>
-            
+
             <div className="flex justify-center lg:justify-start space-x-6 animate-fade-in" style={{ animationDelay: '0.8s' }}>
               <a href="https://github.com/Najathmhd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-12">
                 <Github size={24} />
@@ -121,14 +121,14 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Right Profile Section - Desktop Only */}
           <div className="lg:col-span-5 hidden lg:flex justify-center items-center animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <div className="relative">
               {/* Main Profile Container with 3D Flip Effect */}
               <div className="relative w-96 h-96 flex items-center justify-center perspective-1000">
                 {/* Profile Image with Manual Flip */}
-                <div 
+                <div
                   className="relative w-80 h-80 flip-card-auto cursor-pointer"
                   onClick={toggleFlip}
                 >
@@ -141,7 +141,7 @@ const HeroSection = () => {
                         className="w-full h-full object-cover rounded-3xl shadow-2xl"
                       />
                     </div>
-                    
+
                     {/* Back Side */}
                     <div className="flip-card-back-auto">
                       <div className="w-full h-full rounded-3xl bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 flex flex-col items-center justify-center text-white shadow-2xl">
@@ -159,7 +159,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce flex items-center justify-center shadow-lg" style={{ animationDelay: '1s' }}>
                   <Database size={16} className="text-white" />
@@ -174,7 +174,7 @@ const HeroSection = () => {
                   <TrendingUp size={14} className="text-yellow-400" />
                 </div>
               </div>
-              
+
               {/* Skill Pills */}
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 animate-fade-in" style={{ animationDelay: '1.5s' }}>
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full border border-blue-500/30 backdrop-blur-sm">Python</span>
@@ -185,7 +185,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="text-gray-400 hover:text-white transition-colors duration-300" size={32} />

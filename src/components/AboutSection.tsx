@@ -23,18 +23,18 @@ const AboutSection = () => {
             <h3 className="text-2xl font-semibold text-white mb-6">My Journey</h3>
             <div className="space-y-6">
               <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30 w-full max-w-2xl mx-auto lg:mx-0">
-                I'm currently pursuing my undergraduate degree in Data Science, where I've discovered my passion for 
-                uncovering patterns and insights hidden within data. My academic journey has been complemented by 
-                hands-on projects that have taught me the real-world applications of statistical analysis and machine learning.
+                I am a Data Analyst with a strong interest in working with data, creating meaningful visualizations,
+                and building predictive models. I enjoy exploring datasets to find patterns and insights that can help solve real-world problems.
               </p>
+
               <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30 w-full max-w-2xl mx-auto lg:mx-0">
-                From predicting customer behavior to analyzing social media trends, I love taking complex datasets 
-                and transforming them into clear, actionable insights that drive decision-making. My approach combines 
-                technical expertise with strong communication skills to bridge the gap between data and business value.
+                I have hands-on experience using Python, Pandas, and data visualization tools such as Matplotlib and Seaborn.
+                I have also worked on machine learning projects, including building models for prediction and classification,
+                which helped me understand how data can be used to make better decisions.
               </p>
+
               <p className="text-gray-300 leading-relaxed transform transition-all duration-500 hover:scale-105 hover:text-white p-4 rounded-lg hover:bg-slate-800/30 w-full max-w-2xl mx-auto lg:mx-0">
-                When I'm not coding or analyzing data, you can find me exploring new visualization techniques, 
-                contributing to open-source projects, or learning about the latest developments in AI and machine learning.
+                I am continuously improving my skills in data analysis and machine learning. My goal is to become a Machine Learning Engineer by building strong fundamentals and working on real-world data-driven projects.
               </p>
             </div>
           </div>
