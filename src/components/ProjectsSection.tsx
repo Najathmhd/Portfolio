@@ -12,10 +12,11 @@ const ProjectsSection = () => {
     { month: 'Jun', sales: 5500 },
   ];
 
-  const customerData = [
-    { segment: 'Enterprise', value: 40 },
-    { segment: 'SMB', value: 35 },
-    { segment: 'Startup', value: 25 },
+  const heartDiseaseData = [
+    { model: 'Random Forest', accuracy: 88 },
+    { model: 'Decision Tree', accuracy: 85 },
+    { model: 'Logistic Reg.', accuracy: 83 },
+    { model: 'KNN', accuracy: 79 },
   ];
 
   const sentimentData = [
@@ -28,25 +29,26 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "Customer Churn Prediction",
-      description: "Built a machine learning model to predict customer churn using historical transaction data, achieving 87% accuracy with Random Forest algorithm.",
-      tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      title: "Heart Disease Prediction Model",
+      description: "Developed a machine learning classification model using the Cleveland Clinic dataset to predict the presence of heart disease. Conducted exploratory data analysis and evaluated multiple algorithms to optimize accuracy based on clinical parameters.",
+      tech: ["Python", "Scikit-Learn", "Pandas", "Seaborn"],
       chart: (
         <ResponsiveContainer width="100%" height={200}>
-          <LineChart data={salesData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-            <XAxis dataKey="month" stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
+          <BarChart data={heartDiseaseData} layout="vertical" margin={{ left: 20 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#374151" horizontal={false} />
+            <XAxis type="number" domain={[0, 100]} stroke="#9CA3AF" hide />
+            <YAxis dataKey="model" type="category" stroke="#9CA3AF" width={100} axisLine={false} tickLine={false} />
             <Tooltip 
               contentStyle={{ backgroundColor: '#1F2937', border: '1px solid #374151', borderRadius: '8px' }}
               labelStyle={{ color: '#F9FAFB' }}
+              formatter={(value) => [`${value}%`, 'Accuracy']}
             />
-            <Line type="monotone" dataKey="sales" stroke="#3B82F6" strokeWidth={3} />
-          </LineChart>
+            <Bar dataKey="accuracy" fill="#EC4899" radius={[0, 4, 4, 0]} label={{ position: 'right', fill: '#9CA3AF', formatter: (val) => `${val}%` }} />
+          </BarChart>
         </ResponsiveContainer>
       ),
-      github: "#",
-      demo: "#"
+      github: "https://github.com/Najathmhd/Heart-disease---ML.git",
+      demo: "https://ycemt2ncg7fnpgwcguxgh3.streamlit.app/"
     },
     {
       title: "Sales Analytics Dashboard",
