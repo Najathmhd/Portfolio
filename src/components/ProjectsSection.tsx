@@ -30,7 +30,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Heart Disease Prediction Model",
-      description: "Developed a machine learning classification model using the Cleveland Clinic dataset to predict the presence of heart disease. Conducted exploratory data analysis and evaluated multiple algorithms to optimize accuracy based on clinical parameters.",
+      description: "Built a machine learning model using the Cleveland Clinic dataset to predict heart disease, evaluating multiple algorithms to optimize clinical accuracy.",
       tech: ["Python", "Scikit-Learn", "Pandas", "Seaborn"],
       chart: (
         <ResponsiveContainer width="100%" height={200}>
@@ -169,6 +169,8 @@ const ProjectsSection = () => {
                 <div className="flex space-x-4">
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110"
                   >
                     <Github size={20} />
@@ -176,6 +178,8 @@ const ProjectsSection = () => {
                   </a>
                   <a
                     href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110"
                   >
                     <ExternalLink size={20} />
